@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 @font-face {
   font-family: Rubick;
   src:url("../fonts/Rubik-Regular.ttf");
@@ -38,17 +40,17 @@
 
 .icon-telegram:before {
   content: "\e900";
-  color: #ffffff;
+  color: $main-color;
 }
 .icon-instagram:before {
   content: "\e901";
-  color: #ffffff;
+  color: $main-color;
 }
 .icon-github:before {
   content: "\e902";
-  color: #ffffff;
+  color: $main-color;
 }
 .icon-facebook:before {
   content: "\e903";
-  color: #ffffff;
+  color: $main-color;
 }

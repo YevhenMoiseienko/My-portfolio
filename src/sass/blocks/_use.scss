@@ -1,0 +1,64 @@
+.use {
+  padding-top: 120px;
+  .title {
+    color: #000000;
+    text-align: center;
+  }
+  &__title {
+    position: relative;
+    @include circle_before;
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__wrapper {
+    padding: 60px 10px 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, minmax(270px, auto));
+    gap: 13px;
+  }
+  &__item {
+    border: 1px solid #000000;
+    padding: 30px 30px 25px;
+    &-name {
+      margin: 20px 0 15px;
+    }
+    &-text {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  &__cover {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, minmax(50px, auto));
+    gap: 30px 45px;
+  }
+  &__elem {
+   &-box {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: relative;
+     @include circle_before;
+     h4 {
+       padding-left: 13px;
+       margin-bottom: 0;
+     }
+   }
+    &-line {
+      height: 14px;
+      width: 100%;
+      background-color: #E8E4DE;
+      border-radius: 4px;
+      margin-top: 27px;
+    }
+    &-subline {
+      height: 100%;
+      background-color: $main-color;
+      border-radius: 4px
+    }
+  }
+}
