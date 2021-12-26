@@ -3,15 +3,6 @@
   .title {
     color: #000000;
   }
-  &__title {
-    text-align: center;
-    position: relative;
-    @include circle_before;
-    &:before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
   &__subtitle {
     text-align: center;
   }

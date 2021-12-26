@@ -4,14 +4,6 @@
     color: #000000;
     text-align: center;
   }
-  &__title {
-    position: relative;
-    @include circle_before;
-    &:before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
   &__wrapper {
     padding: 60px 10px 120px;
     display: grid;
@@ -54,11 +46,12 @@
       background-color: #E8E4DE;
       border-radius: 4px;
       margin-top: 27px;
-    }
-    &-subline {
-      height: 100%;
-      background-color: $main-color;
-      border-radius: 4px
+      span {
+        display: block;
+        height: 100%;
+        background-color: $main-color;
+        border-radius: 4px
+      }
     }
   }
 }
