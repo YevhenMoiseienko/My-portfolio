@@ -13,6 +13,8 @@
 @import "blocks/use";
 @import "blocks/portfolio";
 @import "blocks/price";
+@import "blocks/contacts";
+@import "blocks/policy";
 
 * {
     font-family: 'Rubick', sans-serif;
@@ -31,3 +33,5 @@
     background-color: $main-color;
     margin: 25px auto 0 auto;
 }
+
+@import "blocks/media";
